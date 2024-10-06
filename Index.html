@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Genrator</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p>WRITE A TEXT OR URL TO GENERATE QR CODE</p>
+      <input id="input" type="text" placeholder="Text Or Url" />
+      <button onclick="run();">Genrate Qr Code</button>
+    </div>
+   <div class="box">
+    <img id="image " src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=youtube.com"
+></img>; 
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="Main.js"></script>
+  </body>
+</html>
